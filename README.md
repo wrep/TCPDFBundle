@@ -7,36 +7,17 @@ Symfony2 applications.
 Installation
 ------------
 
-### Step 1: Add both the bundle and TCPDF to your `deps` file
-```
-[WhiteOctoberTCPDFBundle]
-    git=http://github.com/whiteoctober/WhiteOctoberTCPDFBundle.git
-    target=/bundles/WhiteOctober/TCPDFBundle
-
-[TCPDF]
-    git=git://tcpdf.git.sourceforge.net/gitroot/tcpdf/tcpdf
-    target=/tcpdf
+### Step 1: Add the bundle to your composer.json
+``` yaml
+"require": {
+        # ...
+        "wrep/tcpdf-bundle" : "dev-master"
+    },
 ```
 
-Now run the vendors script to download the bundle and library:
+### Step 2: Run composer install
 
-``` bash
-$ php bin/vendors install
-```
-
-### Step 2: Configure the autoloader
-
-Add the `WhiteOctober` namespace to your autoloader:
-
-``` php
-<?php
-// app/autoload.php
-
-$loader->registerNamespaces(array(
-    // ...
-    'WhiteOctober' => __DIR__.'/../vendor/bundles',
-));
-```
+Run composer update to install the TCPDF library and TCPDF Bundle
 
 ### Step 3: Enable the bundle in the kernel
 
