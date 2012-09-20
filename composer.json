@@ -16,7 +16,7 @@
         "tcpdf/tcpdf": "dev-master"
     },
     "autoload": {
-        "psr-0": { "WhiteOctober\\TCPDFBundle": "" },
+        "psr-0": { "WhiteOctober\\TCPDFBundle": "" }
     },
     "target-dir": "wrep/TCPDFBundle"
 }
