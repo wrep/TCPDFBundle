@@ -19,9 +19,13 @@ Installation
 }    
 ```
 
-### Step 2: Run composer install
+### Step 2: Run Composer update
 
-Run composer update to install the TCPDF library and TCPDF Bundle
+Run Composer's ``update`` to install the TCPDF library and TCPDF Bundle:
+
+```bash
+$ php composer.phar update
+```
 
 ### Step 3: Enable the bundle in the kernel
 
