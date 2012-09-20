@@ -31,7 +31,7 @@ public function registerBundles()
 {
     $bundles = array(
         // ...
-        new WhiteOctober\TCPDFBundle\WhiteOctoberTCPDFBundle(),
+        new Wrep\TCPDFBundle\WrepTCPDFBundle(),
     );
 }
 ```
@@ -39,11 +39,11 @@ public function registerBundles()
 Using TCPDF
 -----------
 
-You can obtain the `white_october.tcpdf` service from the container,
+You can obtain the `wrep.tcpdf` service from the container,
 and then create a new TCPDF object via the service:
 
 ``` php
-$pdfObj = $container->get("white_october.tcpdf")->create();
+$pdfObj = $container->get("wrep.tcpdf")->create();
 ```
 
 From hereon in, you are using a TCPDF object to work with as normal.
