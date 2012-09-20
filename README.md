@@ -9,9 +9,9 @@ Installation
 
 ### Step 1: Add the bundle to your composer.json
 ``` yaml
-// composer.json
+# composer.json
 {
-    // ...
+    # ...
     "require": {
         # ...
         "wrep/tcpdf-bundle" : "dev-master"
