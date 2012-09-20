@@ -1,9 +1,9 @@
 {
-    "name": "whiteoctober/tcpdf-bundle",
+    "name": "wrep/tcpdf-bundle",
     "type": "symfony-bundle",
     "description": "A bundle to easily integrate TCPDF into Symfony2",
     "keywords": ["pdf", "tcpdf"],
-    "homepage": "https://github.com/whiteoctober/WhiteOctoberTCPDFBundle",
+    "homepage": "https://github.com/wrep/WhiteOctoberTCPDFBundle",
     "authors": [
         {
             "name": "Rich Sage",
@@ -18,5 +18,5 @@
     "autoload": {
         "psr-0": { "WhiteOctober\\TCPDFBundle": "" },
     },
-    "target-dir": "WhiteOctober/TCPDFBundle"
+    "target-dir": "wrep/TCPDFBundle"
 }
