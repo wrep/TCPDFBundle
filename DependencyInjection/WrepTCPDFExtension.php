@@ -1,6 +1,6 @@
 <?php
 
-namespace WhiteOctober\TCPDFBundle\DependencyInjection;
+namespace Wrep\TCPDFBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension,
     Symfony\Component\DependencyInjection\ContainerBuilder,
@@ -9,9 +9,9 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension,
     Symfony\Component\Config\Definition\Processor,
     Symfony\Component\Config\FileLocator;
 
-use WhiteOctober\TCPDFBundle\DependencyInjection\Configuration;
+use Wrep\TCPDFBundle\DependencyInjection\Configuration;
 
-class WhiteOctoberTCPDFExtension extends Extension
+class WrepTCPDFExtension extends Extension
 {
     /**
      * Load our configuration
@@ -26,9 +26,9 @@ class WhiteOctoberTCPDFExtension extends Extension
         $configuration = new Configuration();
         $config = $processor->processConfiguration($configuration, $configs);
 
-        $container->setParameter('white_october_tcpdf.file', $config['file']);
-        $container->setParameter('white_october_tcpdf.class', $config['class']);
-        $container->setParameter('white_october_tcpdf.tcpdf', $config['tcpdf']);
+        $container->setParameter('wrep_tcpdf.file', $config['file']);
+        $container->setParameter('wrep_tcpdf.class', $config['class']);
+        $container->setParameter('wrep_tcpdf.tcpdf', $config['tcpdf']);
 
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');

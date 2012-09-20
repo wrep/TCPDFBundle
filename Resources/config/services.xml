@@ -6,9 +6,9 @@
     <services>
 
         <!-- TCPDF service -->
-        <service id="white_october.tcpdf" class="WhiteOctober\TCPDFBundle\Controller\TCPDFController">
-            <file>%white_october_tcpdf.file%</file>
-            <argument>%white_october_tcpdf.class%</argument>
+        <service id="wrep.tcpdf" class="Wrep\TCPDFBundle\Controller\TCPDFController">
+            <file>%wrep_tcpdf.file%</file>
+            <argument>%wrep_tcpdf.class%</argument>
         </service>
 
     </services>

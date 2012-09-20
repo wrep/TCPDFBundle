@@ -1,6 +1,6 @@
 <?php
 
-namespace WhiteOctober\TCPDFBundle\Controller;
+namespace Wrep\TCPDFBundle\Controller;
 
 use ReflectionClass;
 

@@ -1,4 +1,4 @@
-WhiteOctoberTCPDFBundle
+TCPDFBundle
 =======================
 
 This bundle facilitates easy use of the TCPDF PDF generation library in

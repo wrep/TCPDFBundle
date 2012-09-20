@@ -1,10 +1,10 @@
 <?php
 
-namespace WhiteOctober\TCPDFBundle;
+namespace Wrep\TCPDFBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class WhiteOctoberTCPDFBundle extends Bundle
+class WrepTCPDFBundle extends Bundle
 {
     /**
      * Ran on bundle boot, our TCPDF configuration constants
@@ -13,7 +13,7 @@ class WhiteOctoberTCPDFBundle extends Bundle
     public function boot()
     {
         // Define our TCPDF variables
-        $config = $this->container->getParameter('white_october_tcpdf.tcpdf');
+        $config = $this->container->getParameter('wrep_tcpdf.tcpdf');
 
         // TCPDF needs some constants defining if our configuration
         // determines we should do so (default true)

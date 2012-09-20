@@ -8,6 +8,10 @@
         {
             "name": "Rich Sage",
             "email": "rich.sage@gmail.com"
+        },
+        {
+        	"name": "Rick Pastoor",
+        	"email": "rick@wrep.nl"
         }
     ],
     "require": {
@@ -16,7 +20,7 @@
         "tcpdf/tcpdf": "dev-master"
     },
     "autoload": {
-        "psr-0": { "WhiteOctober\\TCPDFBundle": "" }
+        "psr-0": { "Wrep\\TCPDFBundle": "" }
     },
-    "target-dir": "wrep/TCPDFBundle"
+    "target-dir": "Wrep/TCPDFBundle"
 }
