@@ -12,6 +12,13 @@ class WrepTCPDFBundle extends Bundle
      */
     public function boot()
     {
+		// Make sure we have our cache
+    	$xCacheDir = $this->container->get('kernel')->getCacheDir() . '/tcpdf';
+    	if (!file_exists($xCacheDir))
+    	{
+    		mkdir($xCacheDir);
+    	}
+    	
         // Define our TCPDF variables
         $config = $this->container->getParameter('wrep_tcpdf.tcpdf');
 
