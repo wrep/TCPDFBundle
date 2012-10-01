@@ -2,6 +2,10 @@
 <container xmlns="http://symfony.com/schema/dic/services"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    
+    <parameters>
+    	<parameter key="wrep_tcpdf.cache_dir">%kernel.cache_dir%/tcpdf</parameter>
+    </parameters>
 
     <services>
 
@@ -9,6 +13,11 @@
         <service id="wrep.tcpdf" class="Wrep\TCPDFBundle\Controller\TCPDFController">
             <file>%wrep_tcpdf.file%</file>
             <argument>%wrep_tcpdf.class%</argument>
+        </service>
+        
+        <service id="wrep.tcpdf.cachewarmer" class="Wrep\TCPDFBundle\CacheWarmer\TCPDFCacheWarmer" public="false">
+        	<tag name="kernel.cache_warmer" />
+        	<argument type="service" id="service_container" />
         </service>
 
     </services>

@@ -3,6 +3,7 @@
 namespace Wrep\TCPDFBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class WrepTCPDFBundle extends Bundle
 {
@@ -12,20 +13,15 @@ class WrepTCPDFBundle extends Bundle
      */
     public function boot()
     {
-		// Make sure we have our cache
-    	$xCacheDir = $this->container->get('kernel')->getCacheDir() . '/tcpdf';
-    	if (!file_exists($xCacheDir))
-    	{
-    		mkdir($xCacheDir);
-    	}
-    	
         // Define our TCPDF variables
         $config = $this->container->getParameter('wrep_tcpdf.tcpdf');
+        
+        // Add our cache path to the correct section of the configuration
+        $cacheDir = $this->container->getParameter('wrep_tcpdf.cache_dir');
+        $config['k_path_cache'] = $cacheDir;
+        $config['k_path_url_cache'] = $cacheDir;
 
-        // TCPDF needs some constants defining if our configuration
-        // determines we should do so (default true)
-        // Set tcpdf.k_tcpdf_external_config to false to use the TCPDF
-        // core defaults
+        // Define TCPDF constants it needs
         if ($config['k_tcpdf_external_config'])
         {
             foreach ($config as $k => $v)

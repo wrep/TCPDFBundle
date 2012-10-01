@@ -78,8 +78,6 @@ wrep_tcpdf:
         k_path_url: '%kernel.root_dir%/../vendor/tcpdf/tcpdf'
         k_path_main: '%kernel.root_dir%/../vendor/tcpdf/tcpdf/'
         k_path_fonts: '%kernel.root_dir%/../vendor/tcpdf/tcpdf/fonts/'
-        k_path_cache: '%kernel.cache_dir%/tcpdf/tcpdf'
-        k_path_url_cache: '%kernel.cache_dir%/tcpdf/tcpdf'
         k_path_images: '%kernel.root_dir%/../vendor/tcpdf/tcpdf/images/'
         k_blank_image: '%kernel.root_dir%/../vendor/tcpdf/tcpdf/images/_blank.png'
         k_cell_height_ratio: 1.25
