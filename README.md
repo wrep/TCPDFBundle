@@ -56,6 +56,15 @@ $pdfObj = $container->get("wrep.tcpdf")->create();
 
 From hereon in, you are using a TCPDF object to work with as normal.
 
+Troubleshooting
+---------------
+
+If you experience errors while deploying to a production environment, make sure to clean the cache:
+
+```bash
+php app/console cache:clear --env=prod
+```
+
 Using a custom class
 --------------------
 
