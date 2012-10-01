@@ -1,9 +1,9 @@
 {
     "name": "wrep/tcpdf-bundle",
     "type": "symfony-bundle",
-    "description": "A bundle to easily integrate TCPDF into Symfony2",
+    "description": "A bundle to easily integrate TCPDF into Symfony2.",
     "keywords": ["pdf", "tcpdf"],
-    "homepage": "https://github.com/wrep/WhiteOctoberTCPDFBundle",
+    "homepage": "https://github.com/wrep/TCPDFBundle",
     "authors": [
         {
             "name": "Rich Sage",
