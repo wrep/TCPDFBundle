@@ -63,7 +63,7 @@ If you want to use your own custom TCPDF-based class, you can use
 the `class` parameter in your configuration eg in `config.yml`:
 
 ``` yaml
-white_october_tcpdf:
+wrep_tcpdf:
     class: 'Acme\MyBundle\MyTCPDFClass'
 ```
 
